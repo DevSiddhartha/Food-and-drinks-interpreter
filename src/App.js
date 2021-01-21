@@ -30,7 +30,7 @@ export default function App() {
 
 //     console.log(meaning);
 
-    if (meaning == undefined) {
+    if (meaning === undefined) {
       meaning = "We don't have this yet in our database";
     }
     setMeaning(meaning);
