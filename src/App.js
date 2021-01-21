@@ -44,7 +44,7 @@ export default function App() {
   return (
     <div className="App">
       <h1>Food & Drinks Emoji Interpretor</h1>
-      <input onChange={emojiInputHandler} />
+      <input onChange={inputHandler} />
       <h2> {meaning} </h2>
       <h3> Emojis we know </h3>
       {emojisWeKnow.map(function (emoji) {
