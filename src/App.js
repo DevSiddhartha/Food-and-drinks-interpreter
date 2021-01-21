@@ -23,12 +23,12 @@ var emojisWeKnow = Object.keys(emojiDictionary);
 export default function App() {
   const [meaning, setMeaning] = useState("");
 
-  function emojiInputHandler() {
-//     var userInput = event.target.value;
+  function inputHandler(event) {
+    var userInput = event.target.value;
 
     var meaning = emojiDictionary[userInput];
 
-    console.log(meaning);
+//     console.log(meaning);
 
     if (meaning == undefined) {
       meaning = "We don't have this yet in our database";
